@@ -43,3 +43,13 @@ small {
 .posts-heading {
   margin-top: 0.5em;
 }
+
+.post-list {
+  margin-top: 0.5em;
+}
+
+.post-list-date {
+  margin-left: 0.6em;
+  font-size: 0.85em;
+  opacity: 0.6;
+}
