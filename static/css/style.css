@@ -56,9 +56,10 @@ small {
 }
 
 .posts-heading {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
-  font-weight: 400;
 }
 
 .post-list {
