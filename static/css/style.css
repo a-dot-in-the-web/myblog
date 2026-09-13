@@ -57,11 +57,12 @@ small {
 
 .posts-heading {
   margin-top: 0.5em;
+  margin-bottom: 0.2em;
   font-weight: 400;
 }
 
 .post-list {
-  margin-top: 0.5em;
+  margin-top: 0;
 }
 
 .post-list-date {
