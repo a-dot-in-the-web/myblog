@@ -38,6 +38,8 @@ small {
 .post-date {
   margin-top: 0.3em;
   margin-bottom: 1.5em;
+  font-size: 0.9em;
+　opacity: 0.65;
 }
 
 .posts-heading {
