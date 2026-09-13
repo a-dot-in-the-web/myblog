@@ -63,3 +63,12 @@ small {
   font-size: 0.8em;
   opacity: 0.65;
 }
+
+.post-title {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+}
