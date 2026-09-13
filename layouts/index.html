@@ -12,14 +12,14 @@
 
   <h2 style="margin-top: 0.5em;">Posts</h2>
 
-  <ul>
-    {{ range .Site.RegularPages }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <small style="margin-left: 0.5em;">{{ .Date.Format "January 2, 2006" }}</small>
-      </li>
-    {{ end }}
-  </ul>
-
+ <ul class="post-list">
+  {{ range .Site.RegularPages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <small class="post-list-date">{{ .Date.Format "January 2, 2006" }}</small>
+    </li>
+  {{ end }}
+</ul>
+  
 </body>
 </html>
