@@ -19,7 +19,7 @@ GitHub Pagesで公開
 ```
 
 ## 主なファイルと役割
-```text
+
 | ファイル | 役割 | ここを変えると… |
 |---|---|---|
 | `hugo.toml` | ブログ全体の設定 | ブログ名、URL、言語など |
@@ -28,7 +28,6 @@ GitHub Pagesで公開
 | `static/css/style.css` | デザイン | フォント、文字サイズ、余白、色、スマホ表示 |
 | `content/posts/○○.md` | 各記事 | タイトル、日付、本文 |
 | `.github/workflows/hugo.yml` | 自動公開 | GitHub ActionsでHugoを動かす仕組み |
-```
 
 ## 新しい記事を書くとき
 
