@@ -20,14 +20,29 @@ GitHub Pagesで公開
 
 ## 主なファイルと役割
 
-| ファイル | 役割 | ここを変えると… |
-|---|---|---|
-| `hugo.toml` | ブログ全体の設定 | ブログ名、URL、言語など |
-| `layouts/index.html` | トップページ | ブログタイトル、説明文、Posts、記事一覧 |
-| `layouts/_default/single.html` | 記事ページ | 記事タイトル、日付、本文の表示 |
-| `static/css/style.css` | デザイン | フォント、文字サイズ、余白、色、スマホ表示 |
-| `content/posts/○○.md` | 各記事 | タイトル、日付、本文 |
-| `.github/workflows/hugo.yml` | 自動公開 | GitHub ActionsでHugoを動かす仕組み |
+### `hugo.toml`
+**役割：** ブログ全体の設定  
+**ここを変えると：** ブログ名、URL、言語など
+
+### `layouts/index.html`
+**役割：** トップページ  
+**ここを変えると：** ブログタイトル、説明文、Posts、記事一覧
+
+### `layouts/_default/single.html`
+**役割：** 記事ページ  
+**ここを変えると：** 記事タイトル、日付、本文の表示
+
+### `static/css/style.css`
+**役割：** デザイン  
+**ここを変えると：** フォント、文字サイズ、余白、色、スマホ表示
+
+### `content/posts/○○.md`
+**役割：** 各記事  
+**ここを変えると：** タイトル、日付、本文
+
+### `.github/workflows/hugo.yml`
+**役割：** 自動公開  
+**ここを変えると：** GitHub ActionsでHugoを動かす仕組み
 
 ## 新しい記事を書くとき
 
