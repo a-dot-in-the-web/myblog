@@ -9,47 +9,21 @@ draft: false
 ## 全体の流れ
 
 ```text
-Markdownを書く
-↓
-HugoがHTMLに変換
-↓
-GitHub Actionsが自動実行
-↓
-GitHub Pagesで公開
+ Markdownを書く
+ ↓
+ HugoがHTMLに変換
+ ↓
+ GitHub Actionsが自動実行
+ ↓
+ GitHub Pagesで公開
 ```
-
-## 主なファイルと役割
-
-### `hugo.toml`
-**役割：** ブログ全体の設定  
-**ここを変えると：** ブログ名、URL、言語など
-
-### `layouts/index.html`
-**役割：** トップページ  
-**ここを変えると：** ブログタイトル、説明文、Posts、記事一覧
-
-### `layouts/_default/single.html`
-**役割：** 記事ページ  
-**ここを変えると：** 記事タイトル、日付、本文の表示
-
-### `static/css/style.css`
-**役割：** デザイン  
-**ここを変えると：** フォント、文字サイズ、余白、色、スマホ表示
-
-### `content/posts/○○.md`
-**役割：** 各記事  
-**ここを変えると：** タイトル、日付、本文
-
-### `.github/workflows/hugo.yml`
-**役割：** 自動公開  
-**ここを変えると：** GitHub ActionsでHugoを動かす仕組み
 
 ## 新しい記事を書くとき
 
 新しい記事は、
 
 ```text
-content/posts/new-post.md
+ content/posts/new-post.md
 ```
 
 のようなファイルを作ります。
@@ -57,13 +31,13 @@ content/posts/new-post.md
 中身は基本的にこうです。
 
 ```markdown
----
-title: "記事タイトル"
-date: 2026-09-14
-draft: false
----
+ ---
+ title: "記事タイトル"
+ date: 2026-09-14
+ draft: false
+ ---
 
-ここに本文を書きます。
+ ここに本文を書きます。
 ```
 
 ## どこを直せばいい？
@@ -94,13 +68,13 @@ draft: false
 記事を書く場所と、見た目を変える場所は別です。
 
 ```text
-記事を書く
-↓
-content/posts/
+ 記事を書く
+ ↓
+ content/posts/
 
-見た目を変える
-↓
-static/css/style.css
+ 見た目を変える
+ ↓
+ static/css/style.css
 ```
 
 この2つを分けて考えると、かなり分かりやすくなります。
@@ -110,19 +84,19 @@ static/css/style.css
 スマホで正しく表示するために、HTMLの `<head>` にはこれを入れておきます。
 
 ```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
 スマホ専用のCSSは、たとえばこう書けます。
 
 ```css
-@media (max-width: 600px) {
-  body {
-    margin: 50px auto;
-    padding: 0 20px;
-    font-size: 18px;
-  }
-}
+ @media (max-width: 600px) {
+   body {
+     margin: 50px auto;
+     padding: 0 20px;
+     font-size: 18px;
+   }
+ }
 ```
 
 ## 日付の考え方
@@ -130,7 +104,7 @@ static/css/style.css
 記事ファイルには、
 
 ```markdown
-date: 2026-09-14
+ date: 2026-09-14
 ```
 
 のように保存しておきます。
@@ -138,17 +112,17 @@ date: 2026-09-14
 表示するときは、Hugo側で好きな形に変えられます。
 
 ```html
-{{ .Date.Format "January 2, 2006" }}
+ {{ .Date.Format "January 2, 2006" }}
 ```
 
 なら、
 
 ```text
-September 14, 2026
+ September 14, 2026
 ```
 
 のように表示されます。
 
 ---
 
-始めたばかりですが、少しずつ自分のブログを育てていきます。
+まだまだ言われるままにやっている状態ですが、少しずつ育てていきたいと思います。
